@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <article>
+        <h1>Error {{ status_code }}</h1>
+        <p role="alert">{{ message }}</p>
+        <a href="{{ url_for('home') }}">Return home</a>
+    </article>
+{% endblock content %}
