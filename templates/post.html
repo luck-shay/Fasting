@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <article>
+        <a href="{{ url_for('posts') }}">Back to posts</a>
+        <h1>{{ post.title }}</h1>
+        <p>By {{ post.author }} on {{ post.date_posted }}</p>
+        <p>{{ post.content }}</p>
+    </article>
+{% endblock content %}
